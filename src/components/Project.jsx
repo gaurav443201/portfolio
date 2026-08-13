@@ -2,19 +2,6 @@ import React, { useState } from 'react';
 
 const projects = [
   {
-    id: 'fitzen',
-    name: 'FITZEN SPORTS VISION PLATFORM',
-    title: (
-      <>
-        FITZEN <span className="font-light italic text-gray-300 lowercase font-serif">ai</span><br />
-        SPORTS VISION PLATFORM
-      </>
-    ),
-    description: "A full-stack computer vision sports assessment platform measuring athletic performance from video using TensorFlow pose estimation. Features a novel physics-based fraud detection algorithm for codec-independent video tamper detection, built with React, Python, and PostgreSQL.",
-    image: "/assets/photos/group_project.jpg",
-    github: "https://github.com/gaurav443201"
-  },
-  {
     id: 'rag-assistant',
     name: 'RAG AI TEACHING ASSISTANT ON YOUR DATA',
     title: (
@@ -41,32 +28,6 @@ const projects = [
     image: "/assets/photos/best_formal.jpg",
     github: "https://github.com/gaurav443201/bunk-manager-pro",
     modalType: 'bunk'
-  },
-  {
-    id: 'nashik-skills',
-    name: 'NASHIK SKILLS LIVE INTELLIGENCE',
-    title: (
-      <>
-        NASHIK SKILLS <br />
-        AI MATCHING ENGINE
-      </>
-    ),
-    description: "An AI employability platform for student profiling, skill-gap analysis, and automated job/internship matching. Includes backend automated interview evaluations, real-time readiness analytics, and multi-tenant institutional onboarding.",
-    image: "/assets/photos/group_project.jpg",
-    github: "https://github.com/gaurav443201"
-  },
-  {
-    id: 'tedx',
-    name: 'TEDx EVENT LICENSING PLATFORM',
-    title: (
-      <>
-        TEDx <span className="font-light italic text-gray-300 lowercase font-serif">licensee</span><br />
-        EVENT OPERATIONS
-      </>
-    ),
-    description: "Primary licensee and executive management platform directing 40+ student committee members across TEDxKKWIEER speaker curation, venue operations, ticketing, sponsorship acquisition, and institutional PR releases.",
-    image: "/assets/photos/tedx_leader1.jpg",
-    github: "https://github.com/gaurav443201"
   }
 ];
 
