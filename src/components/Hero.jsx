@@ -130,12 +130,6 @@ const Hero = ({ onPreloadComplete }) => {
           ref={buttonsRef}
           className="absolute -bottom-20 left-1/2 -translate-x-1/2 md:translate-x-0 md:-bottom-12 md:left-auto md:right-20 flex items-center gap-2 md:gap-4 pointer-events-auto z-10 opacity-0 w-max"
         >
-          <a href="/RESUME.pdf" target="_blank" rel="noreferrer" className="group w-8 h-8 md:w-12 md:h-12 rounded-full border border-gray-400/30 flex items-center justify-center backdrop-blur-md bg-black/20 hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all duration-300 cursor-pointer" title="View Resume">
-            <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-300 group-hover:text-black transition-transform duration-300 group-hover:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 7L7 17M7 17H16M7 17V8" />
-            </svg>
-          </a>
-
           <a href="#contact" className="px-4 py-1.5 md:px-6 md:py-2.5 rounded-full border border-[#ccff00] flex items-center justify-center backdrop-blur-md bg-[#ccff00] text-black hover:bg-[#b3e600] transition-all cursor-pointer">
             <span className="text-black text-xs md:text-base font-bold tracking-wider uppercase">Contact Me</span>
           </a>
