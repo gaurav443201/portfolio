@@ -7,7 +7,6 @@ const Hero = ({ onPreloadComplete }) => {
   const containerRef = useRef(null);
   const textRef = useRef(null);
   const subtitleRef = useRef(null);
-  const buttonsRef = useRef(null);
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -74,10 +73,10 @@ const Hero = ({ onPreloadComplete }) => {
             ease: "power3.inOut"
           }, "+=0.2"); // slight delay after scramble finishes
 
-          // 2. Fade and slide up the Subtitle and Buttons
-          tl.fromTo([subtitleRef.current, buttonsRef.current],
+          // 2. Fade and slide up the Subtitle
+          tl.fromTo(subtitleRef.current,
             { y: 50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" },
+            { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" },
             "-=1.0" // start animating these while the text is still moving up
           );
 
@@ -123,17 +122,8 @@ const Hero = ({ onPreloadComplete }) => {
           ref={subtitleRef}
           className="absolute -bottom-8 left-1/2 -translate-x-1/2 md:translate-x-0 md:-bottom-12 md:left-8 text-white text-base md:text-2xl lg:text-4xl drop-shadow-md z-10 opacity-0 w-max"
         >
-          <span className="font-bold">Data Analytics & Data Science</span> <span className="font-light italic text-gray-300">| ML Intern @ FlyRank AI</span>
+          <span className="font-light italic text-gray-200">ML Intern @ FlyRank AI</span>
         </p>
-
-        <div
-          ref={buttonsRef}
-          className="absolute -bottom-20 left-1/2 -translate-x-1/2 md:translate-x-0 md:-bottom-12 md:left-auto md:right-20 flex items-center gap-2 md:gap-4 pointer-events-auto z-10 opacity-0 w-max"
-        >
-          <a href="#contact" className="px-4 py-1.5 md:px-6 md:py-2.5 rounded-full border border-[#ccff00] flex items-center justify-center backdrop-blur-md bg-[#ccff00] text-black hover:bg-[#b3e600] transition-all cursor-pointer">
-            <span className="text-black text-xs md:text-base font-bold tracking-wider uppercase">Contact Me</span>
-          </a>
-        </div>
       </div>
 
       <div
