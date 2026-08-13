@@ -48,7 +48,7 @@ const Footer = () => {
 
         {/* Middle Section - Socials */}
         <div className="flex flex-wrap justify-between items-center py-6 border-t border-white/10 mb-4 text-sm md:text-lg font-medium">
-          <a href="https://linkedin.com/in/gauravnavghare" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/gaurav-navghare/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">LinkedIn</a>
           <a href="https://github.com/gaurav443201" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Github</a>
           <a href="mailto:navgharegaurav80@gmail.com" className="hover:text-[#ccff00] transition-colors">Email</a>
           <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Resume</a>

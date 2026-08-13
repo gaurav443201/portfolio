@@ -11,7 +11,7 @@ const projects = [
     ),
     description: "A full-stack computer vision sports assessment platform measuring athletic performance from video using TensorFlow pose estimation. Features a novel physics-based fraud detection algorithm for codec-independent video tamper detection, built with React, Python, and PostgreSQL.",
     image: "/assets/photos/group_project.jpg",
-    github: "https://github.com/shivanjayb"
+    github: "https://github.com/gaurav443201"
   },
   {
     name: 'TERM SHEET PARSER & EXPLAINER',
@@ -23,7 +23,7 @@ const projects = [
     ),
     description: "An AI-powered financial term sheet parsing platform that extracts structured product data from complex PDFs using LLMs, OCR, and RAG-based context chat. Features automated table extraction, confidence scoring, and interactive query engines.",
     image: "/assets/photos/project_discussion.jpg",
-    github: "https://github.com/shivanjayb"
+    github: "https://github.com/gaurav443201"
   },
   {
     name: 'NASHIK SKILLS LIVE INTELLIGENCE',
@@ -35,7 +35,7 @@ const projects = [
     ),
     description: "An AI employability platform for student profiling, skill-gap analysis, and automated job/internship matching. Includes backend automated interview evaluations, real-time readiness analytics, and multi-tenant institutional onboarding.",
     image: "/assets/photos/best_formal.jpg",
-    github: "https://github.com/shivanjayb"
+    github: "https://github.com/gaurav443201"
   },
   {
     name: 'TEDx EVENT LICENSING PLATFORM',
@@ -47,7 +47,7 @@ const projects = [
     ),
     description: "Primary licensee and executive management platform directing 40+ student committee members across TEDxKKWIEER speaker curation, venue operations, ticketing, sponsorship acquisition, and institutional PR releases.",
     image: "/assets/photos/tedx_leader1.jpg",
-    github: "https://github.com/shivanjayb"
+    github: "https://github.com/gaurav443201"
   }
 ];
 

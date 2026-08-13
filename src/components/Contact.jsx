@@ -75,7 +75,7 @@ const ContactSection = () => {
                         <div className="mt-4 flex flex-col items-center md:items-start">
                             <p className="text-gray-400 text-sm mb-4">Connect with Gaurav</p>
                             <div className="flex items-center justify-center md:justify-start gap-3">
-                                <a href="https://linkedin.com/in/gauravnavghare" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#ccff00] hover:text-black transition-all">
+                                <a href="https://www.linkedin.com/in/gaurav-navghare/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#ccff00] hover:text-black transition-all">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                                         <rect width="4" height="12" x="2" y="9"/>
