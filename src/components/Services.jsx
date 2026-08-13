@@ -7,39 +7,39 @@ gsap.registerPlugin(ScrollTrigger);
 const servicesData = [
   {
     id: '01',
-    title: 'MACHINE LEARNING & PREDICTIVE MODELING',
-    description: 'I develop, train, and evaluate machine learning models using Python and Scikit-learn for AI-driven applications. From data preprocessing and feature engineering to model optimization, I create reliable predictive solutions.',
+    title: 'DATA ANALYTICS & DASHBOARDING',
+    description: 'I perform exploratory data analysis (EDA), data cleaning, statistical modeling, and create interactive dashboards using SQL (MySQL), Power BI, and Python to transform complex datasets into actionable business insights.',
     capabilities: [
-      'Build and tune supervised & unsupervised ML models using Scikit-learn',
-      'Perform feature engineering, scaling, and data preprocessing',
-      'Conduct metric evaluations (Precision, Recall, F1, ROC-AUC)',
-      'Deploy predictive model pipelines for real-world AI applications',
-      'Deliver clean, maintainable Python machine learning code'
+      'Exploratory Data Analysis (EDA) & Statistical Analysis',
+      'Power BI & Tableau Interactive Dashboarding',
+      'SQL (MySQL) Complex Aggregations & Query Optimization',
+      'Pandas & NumPy Automated Data Cleaning Pipelines',
+      'Business Intelligence & Key Performance Metric Tracking'
     ],
     buttonText: 'VIEW PROJECTS'
   },
   {
     id: '02',
-    title: 'DATA SCIENCE & ANALYTICS',
-    description: 'I perform exploratory data analysis (EDA), data cleaning, statistical modeling, and create interactive visualizations with Power BI and SQL to transform complex datasets into clear business insights.',
+    title: 'DATA SCIENCE & PREDICTIVE ANALYTICS',
+    description: 'I build end-to-end data science pipelines, statistical models, and feature engineering workflows in Python and R to evaluate data trends and deliver predictive business intelligence.',
     capabilities: [
-      'Exploratory Data Analysis (EDA)',
-      'Power BI Dashboards & Data Visualization',
-      'SQL (MySQL) Database Query Optimization',
-      'Pandas & NumPy Data Cleaning Pipelines',
-      'Statistical Analysis & Trend Forecasting'
+      'End-to-End Data Science & Statistical Modeling Pipelines',
+      'Feature Selection, Scaling, and Engineering',
+      'Exploratory & Hypothesis Testing Algorithms',
+      'Python & R Quantitative Analytics',
+      'Automated Data Processing & Report Generation'
     ]
   },
   {
     id: '03',
-    title: 'LLM & RAG PIPELINE DEVELOPMENT',
-    description: 'I construct Retrieval-Augmented Generation (RAG) pipelines and integrate OpenAI GPT & Whisper speech recognition to enable context-aware AI teaching assistants and document chat systems.',
+    title: 'MACHINE LEARNING & PREDICTIVE MODELING',
+    description: 'I develop, train, and evaluate machine learning models using Python and Scikit-learn for AI-driven applications. From metric evaluation to hyperparameter tuning, I build reliable predictive models.',
     capabilities: [
-      'Retrieval-Augmented Generation (RAG) Architectures',
-      'OpenAI GPT & Whisper Speech-to-Text Integration',
-      'Vector Embeddings & Cosine Similarity Search',
-      'Prompt Engineering & Context Management',
-      'Joblib & Vector Indexing Pipelines'
+      'Supervised & Unsupervised ML Model Training with Scikit-learn',
+      'Metric Tuning (Precision, Recall, F1, ROC-AUC, RMSE)',
+      'Cross-Validation & Model Serialization with Joblib',
+      'Retrieval-Augmented Generation (RAG) & Vector Embeddings',
+      'Production-Ready Machine Learning Workflows'
     ]
   },
   {

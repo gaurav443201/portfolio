@@ -6,11 +6,49 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 'retail-analytics',
+      title: 'Retail Media Innovation Jam Analytics Engine',
+      category: 'Data Analytics',
+      timeline: '2026',
+      subtitle: 'HackerEarth Tesco Retail Media Hackathon Project',
+      description: 'Analytical data pipeline developed for the HackerEarth Tesco Retail Media Innovation Jam hackathon to model campaign incentivisation metrics, SQL aggregations, and customer engagement insights.',
+      highlights: [
+        'Statistical analytics and campaign incentivisation metrics modeling',
+        'Interactive Power BI & Python data visualization pipeline',
+        'SQL query optimization, data aggregation, and insights extraction',
+        'Evaluated campaign performance with statistical significance metrics'
+      ],
+      tags: ['Python', 'SQL', 'Data Analytics', 'Power BI', 'Statistics', 'Hackathon'],
+      github: 'https://github.com/gaurav443201',
+      live: '#',
+      icon: FileText,
+      gradient: 'from-[#1a1917] to-amber-900'
+    },
+    {
+      id: 'flyrank-ml',
+      title: 'Predictive Analytics & EDA Pipeline (FlyRank AI)',
+      category: 'Data Science',
+      timeline: 'Jul 2026 – Present',
+      subtitle: 'Data Preprocessing, Feature Engineering & Predictive Analytics',
+      description: 'Developed and evaluated machine learning models using Python and Scikit-learn for AI-driven applications at FlyRank AI. Conducted feature engineering, exploratory data analysis (EDA), and data cleaning pipelines.',
+      highlights: [
+        'Exploratory Data Analysis (EDA) and data cleaning pipelines',
+        'Scikit-learn model evaluation, cross-validation & metric tuning',
+        'Feature selection and scaling algorithms for production datasets',
+        'Optimized predictive model performance for real-world AI applications'
+      ],
+      tags: ['Python', 'Data Science', 'Scikit-learn', 'EDA', 'Feature Engineering'],
+      github: 'https://github.com/gaurav443201',
+      live: '#',
+      icon: Activity,
+      gradient: 'from-stone-700 to-stone-900'
+    },
+    {
       id: 'rag-assistant',
-      title: 'RAG-Based AI Teaching Assistant',
-      category: 'LLM & RAG',
+      title: 'RAG-Based AI & Data Intelligence Assistant',
+      category: 'Machine Learning & AI',
       timeline: 'Jan 2026 – Present',
-      subtitle: 'RAG Pipeline, Whisper & GPT Document QA',
+      subtitle: 'RAG Pipeline, Whisper Speech Recognition & GPT QA',
       description: 'Built a Retrieval-Augmented Generation (RAG) pipeline to answer lecture-based queries using LLMs. Processed lecture videos using Whisper, generated vector embeddings, and implemented similarity search for context-aware responses.',
       highlights: [
         'Retrieval-Augmented Generation (RAG) pipeline for context-aware QA',
@@ -23,48 +61,10 @@ const Projects = () => {
       live: '#',
       icon: Brain,
       gradient: 'from-amber-600 to-amber-700'
-    },
-    {
-      id: 'flyrank-ml',
-      title: 'Predictive ML & EDA Pipeline (FlyRank AI)',
-      category: 'AI & Machine Learning',
-      timeline: 'Jul 2026 – Present',
-      subtitle: 'Data Preprocessing, Feature Engineering & Predictive Analytics',
-      description: 'Developed and evaluated machine learning models using Python and Scikit-learn for AI-driven applications at FlyRank AI. Conducted feature engineering and exploratory data analysis (EDA) to optimize performance.',
-      highlights: [
-        'Exploratory Data Analysis (EDA) and data cleaning pipelines',
-        'Scikit-learn model evaluation, cross-validation & metric tuning',
-        'Feature selection and scaling algorithms for production datasets',
-        'Optimized predictive model performance for real-world AI applications'
-      ],
-      tags: ['Python', 'Scikit-learn', 'EDA', 'Feature Engineering', 'Machine Learning'],
-      github: 'https://github.com/gaurav443201',
-      live: '#',
-      icon: Activity,
-      gradient: 'from-stone-700 to-stone-900'
-    },
-    {
-      id: 'retail-analytics',
-      title: 'Retail Media Innovation Jam Analytics Engine',
-      category: 'Data Analytics',
-      timeline: '2026',
-      subtitle: 'HackerEarth Tesco Retail Media Hackathon Project',
-      description: 'Analytical data pipeline developed for the HackerEarth Tesco Retail Media Innovation Jam hackathon to model campaign incentivisation metrics and customer engagement insights.',
-      highlights: [
-        'Statistical analytics and campaign incentivisation metrics modeling',
-        'Interactive data visualization and predictive analytics pipeline',
-        'SQL query optimization, data aggregation, and insights extraction',
-        'Evaluated campaign performance with statistical significance metrics'
-      ],
-      tags: ['Python', 'SQL', 'Data Science', 'Statistics', 'Power BI', 'Hackathon'],
-      github: 'https://github.com/gaurav443201',
-      live: '#',
-      icon: FileText,
-      gradient: 'from-[#1a1917] to-amber-900'
     }
   ];
 
-  const filterCategories = ['All', 'AI & Machine Learning', 'LLM & RAG', 'Data Analytics'];
+  const filterCategories = ['All', 'Data Analytics', 'Data Science', 'Machine Learning & AI'];
 
   const filteredProjects = activeFilter === 'All'
     ? projects

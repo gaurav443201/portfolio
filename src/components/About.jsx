@@ -5,28 +5,31 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const frontendSkills = ["Python", "Machine Learning", "Data Analytics", "Scikit-learn", "R Language", "SQL (MySQL)", "Exploratory Data Analysis", "Statistics"];
-const backendSkills = ["RAG Pipelines", "OpenAI / GPT", "Whisper AI", "Embeddings", "Joblib", "Pandas", "Feature Engineering", "Predictive Modeling"];
-const aiSkills = ["AWS Cloud", "Power BI", "Tableau", "Microsoft Azure", "Databricks", "Jupyter Notebook", "Docker", "Git & GitHub"];
-const toolsSkills = ["AWS Student Builder Leader", "GeeksforGeeks Ambassador", "FlyRank AI ML Intern", "Elastic Blogathon Top 100", "HackerEarth Winner"];
+const frontendSkills = ["SQL (MySQL)", "Power BI", "Data Analytics", "Exploratory Data Analysis (EDA)", "Tableau", "Excel Analytics", "Data Cleaning", "Statistics"];
+const backendSkills = ["Python", "Pandas & NumPy", "Data Science", "Scikit-learn", "Predictive Analytics", "Feature Engineering", "R Language", "Statistical Modeling"];
+const aiSkills = ["Machine Learning", "Supervised ML", "RAG Pipelines", "OpenAI / GPT", "Whisper AI", "Vector Embeddings", "Model Evaluation", "Joblib"];
+const toolsSkills = ["AWS Cloud", "Databricks", "Microsoft Azure", "Jupyter Notebook", "Docker", "Git & GitHub", "AWS Builder Leader", "GFG Ambassador"];
 
 const aboutWords = [
   { text: "Hey," }, { text: "I'm" },
   { text: "Gaurav.", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-[#ccff00]" },
   { text: "A" }, { text: "Computer" }, { text: "Engineering" }, { text: "student" }, { text: "and" }, { text: "Machine" }, { text: "Learning" }, { text: "Intern" }, { text: "at" },
   { text: "FlyRank AI,", className: "text-[#ccff00] font-medium" },
-  { text: "passionate" }, { text: "about" }, { text: "Data" }, { text: "Science," }, { text: "Predictive" }, { text: "Analytics," }, { text: "and" }, { text: "building" }, { text: "intelligent" }, { text: "AI" }, { text: "solutions." },
+  { text: "focused" }, { text: "on" },
+  { text: "Data Analytics,", className: "text-white font-medium" },
+  { text: "Data Science,", className: "text-white font-medium" },
+  { text: "and" },
+  { text: "Predictive Modeling.", className: "text-white font-medium" },
   { text: "I" }, { text: "also" }, { text: "serve" }, { text: "as" }, { text: "an" },
   { text: "AWS Student Builder Group Leader", className: "text-white font-medium" },
   { text: "and" },
   { text: "GeeksforGeeks Campus Ambassador,", className: "text-white font-medium" },
-  { text: "organizing" }, { text: "tech" }, { text: "initiatives" }, { text: "and" }, { text: "helping" }, { text: "students" }, { text: "explore" }, { text: "emerging" }, { text: "cloud" }, { text: "and" }, { text: "AI" }, { text: "technologies." },
-  { text: "I" }, { text: "love" }, { text: "solving" }, { text: "complex" }, { text: "data" }, { text: "problems" }, { text: "using" },
+  { text: "building" }, { text: "tech" }, { text: "initiatives" }, { text: "and" }, { text: "solving" }, { text: "real-world" }, { text: "data" }, { text: "challenges" }, { text: "with" },
+  { text: "SQL,", className: "text-white font-medium" },
+  { text: "Power BI,", className: "text-[#ccff00] font-medium" },
   { text: "Python,", className: "text-white font-medium" },
-  { text: "Scikit-learn,", className: "text-white font-medium" },
-  { text: "RAG Pipelines,", className: "text-white font-medium" },
-  { text: "SQL," }, { text: "and" },
-  { text: "Power BI.", className: "text-[#ccff00] font-medium" }
+  { text: "and" },
+  { text: "Scikit-learn.", className: "text-[#ccff00] font-medium" }
 ];
 
 const About = () => {
@@ -115,7 +118,7 @@ const About = () => {
                 {/* Bottom Overlay Label */}
                 <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center text-xs font-mono text-white/90 bg-black/70 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10">
                   <span className="font-bold">Gaurav Navghare</span>
-                  <span className="text-[#ccff00] text-[10px]">ML & Data Science</span>
+                  <span className="text-[#ccff00] text-[10px]">Data Analytics & Data Science</span>
                 </div>
               </div>
             </div>
