@@ -11,7 +11,7 @@ const projects = [
       </>
     ),
     description: "A Retrieval-Augmented Generation (RAG) platform to convert custom lecture video archives into an interactive AI teaching assistant. Automatically transcribes video audio to MP3, converts speech to JSON, generates vector embeddings, and feeds contextual prompt payloads to LLMs.",
-    image: "/assets/photos/project_discussion.jpg",
+    image: "/assets/photos/rag_project.png",
     github: "https://github.com/gaurav443201/RAG-BASED-PROJECT",
     modalType: 'rag'
   },
@@ -25,7 +25,7 @@ const projects = [
       </>
     ),
     description: "A modern educational web application designed to help students track attendance, compute bunk allowances above 75%, and calculate recovery classes. Features single-click attendance logging, Chart.js visual analytics, dark mode, and a Flask/MongoDB backend.",
-    image: "/assets/photos/best_formal.jpg",
+    image: "/assets/photos/bunk_manager.png",
     github: "https://github.com/gaurav443201/bunk-manager-pro",
     modalType: 'bunk'
   }
