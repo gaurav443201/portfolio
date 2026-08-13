@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,6 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== 'undefined') {
+        setScrolled(window.scrollY > 30);
         if (window.scrollY > lastScrollY && window.scrollY > 50) {
           setShow(false);
         } else {
@@ -47,7 +49,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-5 md:px-12 md:py-6 transition-all duration-700 ease-in-out ${show ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} ${isMenuOpen ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 transition-all duration-500 ease-in-out ${show ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} ${isMenuOpen ? 'bg-black/95 backdrop-blur-xl' : scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10 shadow-2xl py-4' : 'bg-transparent py-6'}`}>
         {/* Logo */}
         <div className="text-white font-black text-xl md:text-2xl tracking-widest uppercase cursor-pointer relative z-50">
           Gaurav<span className="text-[#ccff00]">.</span>

@@ -4,6 +4,7 @@ const projects = [
   {
     id: 'rag-assistant',
     name: 'RAG AI TEACHING ASSISTANT ON YOUR DATA',
+    category: 'MACHINE LEARNING & RAG PIPELINE',
     title: (
       <>
         RAG AI <span className="font-light italic text-gray-300 lowercase font-serif">teaching</span><br />
@@ -11,6 +12,7 @@ const projects = [
       </>
     ),
     description: "A Retrieval-Augmented Generation (RAG) platform to convert custom lecture video archives into an interactive AI teaching assistant. Automatically transcribes video audio to MP3, converts speech to JSON, generates vector embeddings, and feeds contextual prompt payloads to LLMs.",
+    tags: ['Python', 'OpenAI GPT', 'Whisper AI', 'Vector Embeddings', 'Joblib', 'Pandas'],
     image: "/assets/photos/rag_project.png",
     github: "https://github.com/gaurav443201/RAG-BASED-PROJECT",
     modalType: 'rag'
@@ -18,6 +20,7 @@ const projects = [
   {
     id: 'bunk-manager-pro',
     name: 'BUNK MANAGER PRO',
+    category: 'FULL-STACK EDUCATIONAL PLATFORM',
     title: (
       <>
         BUNK MANAGER <span className="font-light italic text-gray-300 lowercase font-serif">pro</span><br />
@@ -25,6 +28,7 @@ const projects = [
       </>
     ),
     description: "A modern educational web application designed to help students track attendance, compute bunk allowances above 75%, and calculate recovery classes. Features single-click attendance logging, Chart.js visual analytics, dark mode, and a Flask/MongoDB backend.",
+    tags: ['Python', 'Flask', 'PyMongo', 'MongoDB', 'Tailwind CSS', 'Alpine.js', 'Chart.js'],
     image: "/assets/photos/bunk_manager.png",
     github: "https://github.com/gaurav443201/bunk-manager-pro",
     modalType: 'bunk'
@@ -129,38 +133,55 @@ const Project = ({ onCtaClick }) => {
       </div>
 
       {/* Projects List - Alternating Layout */}
-      <div className="flex flex-col gap-24 lg:gap-40 w-full">
+      <div className="flex flex-col gap-24 lg:gap-36 w-full">
         {projects.map((proj, idx) => {
           const isEven = idx % 2 === 0;
           return (
             <div key={proj.id || proj.name} className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center justify-between gap-12 lg:gap-16 w-full group`}>
 
               {/* Image Side */}
-              <div className="w-full lg:w-6/12 overflow-hidden relative aspect-[16/10] bg-[#111] rounded-sm">
+              <div className="w-full lg:w-6/12 overflow-hidden relative aspect-[16/10] bg-[#111] rounded-2xl border border-white/10 shadow-2xl group-hover:border-[#ccff00]/40 transition-all duration-500">
                 <img
                   src={proj.image}
                   alt={proj.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100 grayscale hover:grayscale-0"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100 grayscale group-hover:grayscale-0"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 pointer-events-none" />
               </div>
 
               {/* Text Side */}
               <div className="w-full lg:w-5/12 flex flex-col items-start">
-                <span className="text-[#ccff00] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">
-                  0{idx + 1}
-                </span>
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] uppercase mb-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-[#ccff00] text-xs md:text-sm font-bold tracking-widest uppercase">
+                    0{idx + 1}
+                  </span>
+                  <span className="text-[10px] md:text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-white/10 text-gray-300 border border-white/10 uppercase tracking-wider">
+                    {proj.category}
+                  </span>
+                </div>
+
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] uppercase mb-5 group-hover:text-[#ccff00] transition-colors">
                   {proj.title}
                 </h3>
-                <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed mb-10">
+
+                <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed mb-6">
                   {proj.description}
                 </p>
+
+                {/* Tech Tags */}
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {proj.tags.map(t => (
+                    <span key={t} className="px-2.5 py-1 rounded-md bg-white/5 text-[11px] font-mono text-gray-300 border border-white/10">
+                      {t}
+                    </span>
+                  ))}
+                </div>
 
                 <div className="flex items-center gap-4 flex-wrap">
                   {proj.modalType ? (
                     <button 
                       onClick={() => setActiveModal(proj.modalType)} 
-                      className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-bold hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors inline-flex items-center gap-2 shadow-lg shadow-[#ccff00]/10"
+                      className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-bold hover:bg-[#b3e600] hover:scale-105 transition-all inline-flex items-center gap-2 shadow-lg shadow-[#ccff00]/10"
                     >
                       {proj.modalType === 'rag' ? 'Pipeline Guide' : 'Setup & Features'}
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -168,7 +189,7 @@ const Project = ({ onCtaClick }) => {
                       </svg>
                     </button>
                   ) : (
-                    <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors inline-flex items-center gap-2">
+                    <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:scale-105 transition-all inline-flex items-center gap-2">
                       Live Demo
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
@@ -180,7 +201,7 @@ const Project = ({ onCtaClick }) => {
                     href={proj.github} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2"
+                    className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black hover:scale-105 transition-all inline-flex items-center gap-2"
                   >
                     GitHub
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
