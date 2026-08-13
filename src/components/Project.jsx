@@ -117,27 +117,14 @@ const Project = ({ onCtaClick }) => {
     <div id="project" className="bg-[#050505] w-full text-white pt-10 md:pt-20 pb-24 px-6 md:px-16 relative">
 
       {/* Top Header Section */}
-      <div className="flex flex-col lg:flex-row justify-between items-start w-full z-10 gap-12 lg:gap-0 mb-20 lg:mb-32">
+      <div className="flex flex-col lg:flex-row justify-between items-start w-full z-10 gap-12 lg:gap-0 mb-16 lg:mb-24">
 
         {/* Left Giant Title */}
-        <div className="w-full lg:w-7/12 overflow-visible">
+        <div className="w-full overflow-visible">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-300 to-gray-800 drop-shadow-2xl leading-[0.9] uppercase flex items-center gap-3 whitespace-nowrap">
             Selected
             <span className="font-light italic text-gray-300 lowercase font-serif pr-4 pt-2 md:pt-4">work</span>
           </h2>
-        </div>
-
-        {/* Right Description */}
-        <div className="w-full lg:w-4/12 flex flex-col items-start lg:mt-4">
-          <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed mb-8">
-            As a full-stack & AI engineer using modern architectures, computer vision, and high-performance algorithms tailored for scalable production systems.
-          </p>
-          <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black font-medium text-xs md:text-sm hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center gap-2">
-            Read More
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-            </svg>
-          </button>
         </div>
       </div>
 
