@@ -45,26 +45,47 @@ const Projects = () => {
     },
     {
       id: 'rag-assistant',
-      title: 'RAG-Based AI & Data Intelligence Assistant',
+      title: 'RAG AI Teaching Assistant on Your Data',
       category: 'Machine Learning & AI',
       timeline: 'Jan 2026 – Present',
-      subtitle: 'RAG Pipeline, Whisper Speech Recognition & GPT QA',
-      description: 'Built a Retrieval-Augmented Generation (RAG) pipeline to answer lecture-based queries using LLMs. Processed lecture videos using Whisper, generated vector embeddings, and implemented similarity search for context-aware responses.',
+      subtitle: 'Video Ingestion, Speech-to-Text JSON, Vector Embeddings & LLM QA',
+      description: 'Built a Retrieval-Augmented Generation (RAG) teaching assistant to answer lecture queries using LLMs. Converts custom video archives to MP3, transcribes audio into JSON, builds vector dataframes with embeddings, and prompts LLMs with retrieved context.',
       highlights: [
-        'Retrieval-Augmented Generation (RAG) pipeline for context-aware QA',
-        'Processed lecture audio & video using OpenAI Whisper speech recognition',
-        'High-performance similarity search over vector embeddings with Joblib & Pandas',
-        'Prompt engineering and context orchestration with OpenAI GPT models'
+        'Step 1: Collect video files into the video/ folder',
+        'Step 2: Convert video files to MP3 via video_to_mp3',
+        'Step 3: Transcribe MP3 files into structured JSON via mp3_to_json',
+        'Step 4: Vectorize JSON transcriptions with embeddings via preprocess_json',
+        'Step 5: Load .joblib into memory & generate query prompts for the LLM'
       ],
-      tags: ['Python', 'OpenAI GPT', 'Whisper', 'Pandas', 'Embeddings', 'Joblib'],
-      github: 'https://github.com/gaurav443201',
-      live: '#',
+      tags: ['Python', 'OpenAI GPT', 'Whisper', 'Pandas', 'Embeddings', 'Joblib', 'RAG'],
+      github: 'https://github.com/gaurav443201/RAG-BASED-PROJECT',
+      live: 'https://github.com/gaurav443201/RAG-BASED-PROJECT',
       icon: Brain,
       gradient: 'from-amber-600 to-amber-700'
+    },
+    {
+      id: 'bunk-manager-pro',
+      title: 'Bunk Manager Pro',
+      category: 'Full Stack Web App',
+      timeline: '2026',
+      subtitle: 'Flask, MongoDB, Tailwind CSS & Chart.js Attendance Engine',
+      description: 'A modern educational web application helping students track attendance, calculate bunk allowances above 75%, and compute recovery classes with interactive analytics.',
+      highlights: [
+        'Demo Login: Secure presentation bypass (gaurav443201 / 443201)',
+        'Bunk & Recovery Logic: 75% attendance limit and recovery class math',
+        'One-Click Quick Logging: Mark Attended / Bunked with real-time UI updates',
+        'Visual Analytics: Chart.js subject breakdowns & dark mode UI',
+        'Auto-Keep-Awake: Cloud server pinging script prevents inactivity spin-down'
+      ],
+      tags: ['Python', 'Flask', 'MongoDB', 'Tailwind CSS', 'Alpine.js', 'Chart.js'],
+      github: 'https://github.com/gaurav443201/bunk-manager-pro',
+      live: 'https://github.com/gaurav443201/bunk-manager-pro',
+      icon: Layers,
+      gradient: 'from-emerald-800 to-teal-950'
     }
   ];
 
-  const filterCategories = ['All', 'Data Analytics', 'Data Science', 'Machine Learning & AI'];
+  const filterCategories = ['All', 'Full Stack Web App', 'Data Analytics', 'Data Science', 'Machine Learning & AI'];
 
   const filteredProjects = activeFilter === 'All'
     ? projects
